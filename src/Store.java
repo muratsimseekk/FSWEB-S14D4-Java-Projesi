@@ -1,3 +1,5 @@
+import com.workintech.monster.Monster;
+import com.workintech.monster.Troll;
 import com.workintech.product.Bread;
 import com.workintech.product.Chocolate;
 import com.workintech.product.Coke;
@@ -13,6 +15,14 @@ public class Store {
         };
 
         listProducts(product);
+
+
+        System.out.println("*****************************");
+
+        Monster monster = new Troll("Balrog",15,35);
+
+
+
     }
 
     public static void listProducts(ProductForSale[] products) {
@@ -21,4 +31,7 @@ public class Store {
             product.showDetails();
         }
     }
+
+
+
 }
